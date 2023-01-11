@@ -1,0 +1,130 @@
+JVMJ9VM193W Since Java 13 -Xverify:none and -noverify were deprecated for removal and may not be accepted options in the future.
+Expt completed. Result: 590022728
+
+ Performance counter stats for '/home/arjun/WD/J9/Containers/openj9-valuetypes-sanity/build/linux-x86_64-server-release/images/jdk/bin/java -Xverify:none -XX:ValueTypeFlatteningThreshold=64 -Xjit:count=1,disableAsyncCompilation -cp target/valuetypes-comparison-1.1.jar in.ac.iitmandi.compl.suite.ValueMain':
+
+      14,51,60,410      cache-misses                                                
+
+       3.067512629 seconds time elapsed
+
+      10.970980000 seconds user
+       0.334481000 seconds sys
+
+
+JVMJ9VM193W Since Java 13 -Xverify:none and -noverify were deprecated for removal and may not be accepted options in the future.
+Expt completed. Result: -1387822424
+
+ Performance counter stats for '/home/arjun/WD/J9/Containers/openj9-valuetypes-sanity/build/linux-x86_64-server-release/images/jdk/bin/java -Xverify:none -XX:ValueTypeFlatteningThreshold=64 -Xjit:count=1,disableAsyncCompilation -cp target/valuetypes-comparison-1.1.jar in.ac.iitmandi.compl.suite.ValueMain':
+
+      14,81,86,410      cache-misses                                                
+
+       3.148994435 seconds time elapsed
+
+      10.956540000 seconds user
+       0.520395000 seconds sys
+
+
+JVMJ9VM193W Since Java 13 -Xverify:none and -noverify were deprecated for removal and may not be accepted options in the future.
+Expt completed. Result: -176831965
+
+ Performance counter stats for '/home/arjun/WD/J9/Containers/openj9-valuetypes-sanity/build/linux-x86_64-server-release/images/jdk/bin/java -Xverify:none -XX:ValueTypeFlatteningThreshold=64 -Xjit:count=1,disableAsyncCompilation -cp target/valuetypes-comparison-1.1.jar in.ac.iitmandi.compl.suite.ValueMain':
+
+      13,92,12,650      cache-misses                                                
+
+       3.161566251 seconds time elapsed
+
+      10.534221000 seconds user
+       0.483948000 seconds sys
+
+
+JVMJ9VM193W Since Java 13 -Xverify:none and -noverify were deprecated for removal and may not be accepted options in the future.
+Expt completed. Result: 471212993
+
+ Performance counter stats for '/home/arjun/WD/J9/Containers/openj9-valuetypes-sanity/build/linux-x86_64-server-release/images/jdk/bin/java -Xverify:none -XX:ValueTypeFlatteningThreshold=64 -Xjit:count=1,disableAsyncCompilation -cp target/valuetypes-comparison-1.1.jar in.ac.iitmandi.compl.suite.ValueMain':
+
+      14,54,73,718      cache-misses                                                
+
+       3.060476403 seconds time elapsed
+
+      11.019194000 seconds user
+       0.391261000 seconds sys
+
+
+JVMJ9VM193W Since Java 13 -Xverify:none and -noverify were deprecated for removal and may not be accepted options in the future.
+Expt completed. Result: 1397740163
+
+ Performance counter stats for '/home/arjun/WD/J9/Containers/openj9-valuetypes-sanity/build/linux-x86_64-server-release/images/jdk/bin/java -Xverify:none -XX:ValueTypeFlatteningThreshold=64 -Xjit:count=1,disableAsyncCompilation -cp target/valuetypes-comparison-1.1.jar in.ac.iitmandi.compl.suite.ValueMain':
+
+      14,23,59,520      cache-misses                                                
+
+       2.899548544 seconds time elapsed
+
+      10.361336000 seconds user
+       0.416249000 seconds sys
+
+
+JVMJ9VM193W Since Java 13 -Xverify:none and -noverify were deprecated for removal and may not be accepted options in the future.
+Expt completed. Result: -1239466264
+
+ Performance counter stats for '/home/arjun/WD/J9/Containers/openj9-valuetypes-sanity/build/linux-x86_64-server-release/images/jdk/bin/java -Xverify:none -XX:ValueTypeFlatteningThreshold=64 -Xjit:count=1,disableAsyncCompilation -cp target/valuetypes-comparison-1.1.jar in.ac.iitmandi.compl.suite.ValueMain':
+
+      14,73,02,602      cache-misses                                                
+
+       3.071318380 seconds time elapsed
+
+      11.063227000 seconds user
+       0.389772000 seconds sys
+
+
+JVMJ9VM193W Since Java 13 -Xverify:none and -noverify were deprecated for removal and may not be accepted options in the future.
+Expt completed. Result: 1055670091
+
+ Performance counter stats for '/home/arjun/WD/J9/Containers/openj9-valuetypes-sanity/build/linux-x86_64-server-release/images/jdk/bin/java -Xverify:none -XX:ValueTypeFlatteningThreshold=64 -Xjit:count=1,disableAsyncCompilation -cp target/valuetypes-comparison-1.1.jar in.ac.iitmandi.compl.suite.ValueMain':
+
+      14,75,38,699      cache-misses                                                
+
+       3.076342819 seconds time elapsed
+
+      11.131598000 seconds user
+       0.394218000 seconds sys
+
+
+JVMJ9VM193W Since Java 13 -Xverify:none and -noverify were deprecated for removal and may not be accepted options in the future.
+Expt completed. Result: -1060600338
+
+ Performance counter stats for '/home/arjun/WD/J9/Containers/openj9-valuetypes-sanity/build/linux-x86_64-server-release/images/jdk/bin/java -Xverify:none -XX:ValueTypeFlatteningThreshold=64 -Xjit:count=1,disableAsyncCompilation -cp target/valuetypes-comparison-1.1.jar in.ac.iitmandi.compl.suite.ValueMain':
+
+      15,02,10,942      cache-misses                                                
+
+       3.221666607 seconds time elapsed
+
+      11.350907000 seconds user
+       0.428794000 seconds sys
+
+
+JVMJ9VM193W Since Java 13 -Xverify:none and -noverify were deprecated for removal and may not be accepted options in the future.
+Expt completed. Result: -603220462
+
+ Performance counter stats for '/home/arjun/WD/J9/Containers/openj9-valuetypes-sanity/build/linux-x86_64-server-release/images/jdk/bin/java -Xverify:none -XX:ValueTypeFlatteningThreshold=64 -Xjit:count=1,disableAsyncCompilation -cp target/valuetypes-comparison-1.1.jar in.ac.iitmandi.compl.suite.ValueMain':
+
+      14,54,42,247      cache-misses                                                
+
+       3.126725976 seconds time elapsed
+
+      11.068044000 seconds user
+       0.440089000 seconds sys
+
+
+JVMJ9VM193W Since Java 13 -Xverify:none and -noverify were deprecated for removal and may not be accepted options in the future.
+Expt completed. Result: -728900223
+
+ Performance counter stats for '/home/arjun/WD/J9/Containers/openj9-valuetypes-sanity/build/linux-x86_64-server-release/images/jdk/bin/java -Xverify:none -XX:ValueTypeFlatteningThreshold=64 -Xjit:count=1,disableAsyncCompilation -cp target/valuetypes-comparison-1.1.jar in.ac.iitmandi.compl.suite.ValueMain':
+
+      14,02,95,961      cache-misses                                                
+
+       3.112677288 seconds time elapsed
+
+      10.952967000 seconds user
+       0.447646000 seconds sys
+
+

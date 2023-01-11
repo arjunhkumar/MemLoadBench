@@ -1,0 +1,73 @@
+Dev log created.
+Store flattened field in/ac/iitmandi/compl/ds/ValuePoint.x I to in/ac/iitmandi/compl/ds/ValueLine.s.x I - field name s.x
+Allocation Method: in/ac/iitmandi/compl/suite/ValueMain.createVLine()Lin/ac/iitmandi/compl/ds/ValueLine; and BCI: 6 for the above flattening operation.
+
+Store flattened field in/ac/iitmandi/compl/ds/ValuePoint.y I to in/ac/iitmandi/compl/ds/ValueLine.s.y I - field name s.y
+Allocation Method: in/ac/iitmandi/compl/suite/ValueMain.createVLine()Lin/ac/iitmandi/compl/ds/ValueLine; and BCI: 6 for the above flattening operation.
+
+Store flattened field in/ac/iitmandi/compl/ds/ValuePoint.x I to in/ac/iitmandi/compl/ds/ValueLine.e.x I - field name e.x
+Allocation Method: in/ac/iitmandi/compl/suite/ValueMain.createVLine()Lin/ac/iitmandi/compl/ds/ValueLine; and BCI: 11 for the above flattening operation.
+
+Store flattened field in/ac/iitmandi/compl/ds/ValuePoint.y I to in/ac/iitmandi/compl/ds/ValueLine.e.y I - field name e.y
+Allocation Method: in/ac/iitmandi/compl/suite/ValueMain.createVLine()Lin/ac/iitmandi/compl/ds/ValueLine; and BCI: 11 for the above flattening operation.
+
+Store flattened field in/ac/iitmandi/compl/ds/ValuePoint.x I to in/ac/iitmandi/compl/ds/ValueLine.s.x I - field name s.x
+Allocation Method: in/ac/iitmandi/compl/ds/ValueLine.<init>(Qin/ac/iitmandi/compl/ds/ValuePoint;Qin/ac/iitmandi/compl/ds/ValuePoint;)V and BCI: 6 for the above flattening operation.
+
+Store flattened field in/ac/iitmandi/compl/ds/ValuePoint.y I to in/ac/iitmandi/compl/ds/ValueLine.s.y I - field name s.y
+Allocation Method: in/ac/iitmandi/compl/ds/ValueLine.<init>(Qin/ac/iitmandi/compl/ds/ValuePoint;Qin/ac/iitmandi/compl/ds/ValuePoint;)V and BCI: 6 for the above flattening operation.
+
+Store flattened field in/ac/iitmandi/compl/ds/ValuePoint.x I to in/ac/iitmandi/compl/ds/ValueLine.e.x I - field name e.x
+Allocation Method: in/ac/iitmandi/compl/ds/ValueLine.<init>(Qin/ac/iitmandi/compl/ds/ValuePoint;Qin/ac/iitmandi/compl/ds/ValuePoint;)V and BCI: 11 for the above flattening operation.
+
+Store flattened field in/ac/iitmandi/compl/ds/ValuePoint.y I to in/ac/iitmandi/compl/ds/ValueLine.e.y I - field name e.y
+Allocation Method: in/ac/iitmandi/compl/ds/ValueLine.<init>(Qin/ac/iitmandi/compl/ds/ValuePoint;Qin/ac/iitmandi/compl/ds/ValuePoint;)V and BCI: 11 for the above flattening operation.
+
+Store flattened field in/ac/iitmandi/compl/ds/ValuePoint.x I to in/ac/iitmandi/compl/ds/ValueLine.s.x I - field name s.x
+Allocation Method: in/ac/iitmandi/compl/suite/ValueMain.createVLine()Lin/ac/iitmandi/compl/ds/ValueLine; and BCI: 6 for the above flattening operation.
+
+Store flattened field in/ac/iitmandi/compl/ds/ValuePoint.y I to in/ac/iitmandi/compl/ds/ValueLine.s.y I - field name s.y
+Allocation Method: in/ac/iitmandi/compl/suite/ValueMain.createVLine()Lin/ac/iitmandi/compl/ds/ValueLine; and BCI: 6 for the above flattening operation.
+
+Store flattened field in/ac/iitmandi/compl/ds/ValuePoint.x I to in/ac/iitmandi/compl/ds/ValueLine.e.x I - field name e.x
+Allocation Method: in/ac/iitmandi/compl/suite/ValueMain.createVLine()Lin/ac/iitmandi/compl/ds/ValueLine; and BCI: 11 for the above flattening operation.
+
+Store flattened field in/ac/iitmandi/compl/ds/ValuePoint.y I to in/ac/iitmandi/compl/ds/ValueLine.e.y I - field name e.y
+Allocation Method: in/ac/iitmandi/compl/suite/ValueMain.createVLine()Lin/ac/iitmandi/compl/ds/ValueLine; and BCI: 11 for the above flattening operation.
+
+Store flattened field in/ac/iitmandi/compl/ds/ValuePoint.x I to in/ac/iitmandi/compl/ds/ValueLine.s.x I - field name s.x
+Allocation Method: in/ac/iitmandi/compl/suite/ValueMain.createVLine()Lin/ac/iitmandi/compl/ds/ValueLine; and BCI: 6 for the above flattening operation.
+
+Store flattened field in/ac/iitmandi/compl/ds/ValuePoint.y I to in/ac/iitmandi/compl/ds/ValueLine.s.y I - field name s.y
+Allocation Method: in/ac/iitmandi/compl/suite/ValueMain.createVLine()Lin/ac/iitmandi/compl/ds/ValueLine; and BCI: 6 for the above flattening operation.
+
+Store flattened field in/ac/iitmandi/compl/ds/ValuePoint.x I to in/ac/iitmandi/compl/ds/ValueLine.e.x I - field name e.x
+Allocation Method: in/ac/iitmandi/compl/suite/ValueMain.createVLine()Lin/ac/iitmandi/compl/ds/ValueLine; and BCI: 11 for the above flattening operation.
+
+Store flattened field in/ac/iitmandi/compl/ds/ValuePoint.y I to in/ac/iitmandi/compl/ds/ValueLine.e.y I - field name e.y
+Allocation Method: in/ac/iitmandi/compl/suite/ValueMain.createVLine()Lin/ac/iitmandi/compl/ds/ValueLine; and BCI: 11 for the above flattening operation.
+
+Store flattened field in/ac/iitmandi/compl/ds/ValuePoint.x I to in/ac/iitmandi/compl/ds/ValueLine.s.x I - field name s.x
+Allocation Method: in/ac/iitmandi/compl/ds/ValueLine.scaleLine(I)Lin/ac/iitmandi/compl/ds/ValueLine; and BCI: 6 for the above flattening operation.
+
+Store flattened field in/ac/iitmandi/compl/ds/ValuePoint.y I to in/ac/iitmandi/compl/ds/ValueLine.s.y I - field name s.y
+Allocation Method: in/ac/iitmandi/compl/ds/ValueLine.scaleLine(I)Lin/ac/iitmandi/compl/ds/ValueLine; and BCI: 6 for the above flattening operation.
+
+Store flattened field in/ac/iitmandi/compl/ds/ValuePoint.x I to in/ac/iitmandi/compl/ds/ValueLine.e.x I - field name e.x
+Allocation Method: in/ac/iitmandi/compl/ds/ValueLine.scaleLine(I)Lin/ac/iitmandi/compl/ds/ValueLine; and BCI: 11 for the above flattening operation.
+
+Store flattened field in/ac/iitmandi/compl/ds/ValuePoint.y I to in/ac/iitmandi/compl/ds/ValueLine.e.y I - field name e.y
+Allocation Method: in/ac/iitmandi/compl/ds/ValueLine.scaleLine(I)Lin/ac/iitmandi/compl/ds/ValueLine; and BCI: 11 for the above flattening operation.
+
+Store flattened field in/ac/iitmandi/compl/ds/ValuePoint.x I to in/ac/iitmandi/compl/ds/ValueLine.s.x I - field name s.x
+Allocation Method: in/ac/iitmandi/compl/suite/experiments/ScalingExperiment.scaleValueLine(ILin/ac/iitmandi/compl/ds/AbstractLine;)I and BCI: 6 for the above flattening operation.
+
+Store flattened field in/ac/iitmandi/compl/ds/ValuePoint.y I to in/ac/iitmandi/compl/ds/ValueLine.s.y I - field name s.y
+Allocation Method: in/ac/iitmandi/compl/suite/experiments/ScalingExperiment.scaleValueLine(ILin/ac/iitmandi/compl/ds/AbstractLine;)I and BCI: 6 for the above flattening operation.
+
+Store flattened field in/ac/iitmandi/compl/ds/ValuePoint.x I to in/ac/iitmandi/compl/ds/ValueLine.e.x I - field name e.x
+Allocation Method: in/ac/iitmandi/compl/suite/experiments/ScalingExperiment.scaleValueLine(ILin/ac/iitmandi/compl/ds/AbstractLine;)I and BCI: 11 for the above flattening operation.
+
+Store flattened field in/ac/iitmandi/compl/ds/ValuePoint.y I to in/ac/iitmandi/compl/ds/ValueLine.e.y I - field name e.y
+Allocation Method: in/ac/iitmandi/compl/suite/experiments/ScalingExperiment.scaleValueLine(ILin/ac/iitmandi/compl/ds/AbstractLine;)I and BCI: 11 for the above flattening operation.
+
