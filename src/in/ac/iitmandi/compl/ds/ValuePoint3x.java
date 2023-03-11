@@ -7,17 +7,17 @@ package in.ac.iitmandi.compl.ds;
  * @author arjun
  *
  */
-public primitive class ValuePointMeduim {
+public primitive class ValuePoint3x {
 
 	private final double x;
 	private final double y;
 	
-	public ValuePointMeduim() {
+	public ValuePoint3x() {
 		this.x = 0;
 		this.y = 0;
 	}
 
-	public ValuePointMeduim(double x, double y) {
+	public ValuePoint3x(double x, double y) {
 		this.x = x;
 		this.y = y;
 	}

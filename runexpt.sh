@@ -13,6 +13,10 @@ perf stat -r 10 -e cache-misses,cache-references -d -d -d $SANITY_JDK/java -Xmx1
 
 echo "Finished ValueMain2x"
 
+perf stat -r 10 -e cache-misses,cache-references -d -d -d $SANITY_JDK/java -Xmx12G  -Xverify:none -XX:ValueTypeFlatteningThreshold=9999 -Xjit:count=1,disableAsyncCompilation,optlevel=hot -cp valuetypes-comparison-2.1-SNAPSHOT.jar in.ac.iitmandi.compl.suite.ValueMain2x 32000000 > vm3x.log 2>&1
+
+echo "Finished ValueMain3x"
+
 perf stat -r 10 -e cache-misses,cache-references -d -d -d $SANITY_JDK/java -Xmx12G  -Xverify:none -XX:ValueTypeFlatteningThreshold=9999 -Xjit:count=1,disableAsyncCompilation,optlevel=hot -cp valuetypes-comparison-2.1-SNAPSHOT.jar in.ac.iitmandi.compl.suite.ValueMain4x 32000000 > vm4x.log 2>&1
 
 echo "Finished ValueMain4x"

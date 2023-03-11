@@ -25,5 +25,10 @@ public abstract class SuperMainClass {
 		ScalingExperiment exp = new ScalingExperiment();
 		exp.runExpt();
 	}
+	
+	protected double runExperimentsWithBlackHole() {
+		ScalingExperiment exp = new ScalingExperiment();
+		return exp.runExptWB();
+	}
 
 }

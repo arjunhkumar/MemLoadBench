@@ -10,8 +10,11 @@ import in.ac.iitmandi.compl.ds.AbstractLine;
 import in.ac.iitmandi.compl.ds.NonValueLine;
 import in.ac.iitmandi.compl.ds.NonValueLine64;
 import in.ac.iitmandi.compl.ds.ValueLine;
-import in.ac.iitmandi.compl.ds.ValueLine64;
-import in.ac.iitmandi.compl.ds.ValueLineMeduim;
+import in.ac.iitmandi.compl.ds.ValueLine2x;
+import in.ac.iitmandi.compl.ds.ValueLine4x;
+import in.ac.iitmandi.compl.ds.ValueLine16x;
+import in.ac.iitmandi.compl.ds.ValueLine8x;
+import in.ac.iitmandi.compl.ds.ValueLine3x;
 import in.ac.iitmandi.compl.suite.GlobalStorage;
 
 /**
@@ -20,11 +23,6 @@ import in.ac.iitmandi.compl.suite.GlobalStorage;
  */
 public class ScalingExperiment {
 
-//	List<ValueLine> scaledVLines;
-//	List<NonValueLine> scaledNVLines;
-//	
-//	List<ValueLine64> scaledVLines64;
-//	List<NonValueLine64> scaledNVLines64;
 	
 	List<AbstractLine> scaledLines;
 	
@@ -36,6 +34,15 @@ public class ScalingExperiment {
 		}
 		System.out.println("Size: "+lines.size());
 		System.out.println("Expt completed. Result: "+lines.hashCode());
+	}
+	
+	public double runExptWB() {
+		int scale = 1;
+		List<AbstractLine> lines = GlobalStorage.getInstance().getLineList();
+		for(AbstractLine line: lines) {
+			scale = scaleLine(scale, line);
+		}
+		return scaledLines.hashCode();
 	}
 
 	public void addToScaledLines(AbstractLine line) {
@@ -52,29 +59,43 @@ public class ScalingExperiment {
 	 * @return
 	 */
 	private int scaleLine(int scale, AbstractLine line) {
-		if(line instanceof ValueLine) {
-			ValueLine vLine = (ValueLine) line;
-			addToScaledLines(vLine.scaleLine(scale));
-			scale = vLine.getS().getX() + vLine.getE().getY();
-		}else if(line instanceof ValueLine64) {
-			ValueLine64 vLine = (ValueLine64) line;
-			addToScaledLines(vLine.scaleLine(scale));
-			scale = Double.valueOf((vLine.getS().getX() + vLine.getE().getY())).intValue();
-		}else if(line instanceof NonValueLine) {
-			NonValueLine nvline = (NonValueLine) line;
-			addToScaledLines(nvline.scaleLine(scale));
-			scale = nvline.getS().getX() + nvline.getE().getY();
-		}else if(line instanceof NonValueLine64) {
-			NonValueLine64 nvline = (NonValueLine64) line;
-			addToScaledLines(nvline.scaleLine(scale));
-			scale = Double.valueOf((nvline.getS().getX() + nvline.getE().getY())).intValue();
-		}
-		else if(line instanceof ValueLineMeduim) {
-			ValueLineMeduim vLine = (ValueLineMeduim) line;
-			addToScaledLines(vLine.scaleLine(scale));
-			scale = Double.valueOf((vLine.getS().getX() + vLine.getE().getY())).intValue();
-		}
+		addToScaledLines(line.scaleLine(scale));
 		return scale;
+//		if(line instanceof ValueLine) {
+//			ValueLine vLine = (ValueLine) line;
+//			addToScaledLines(vLine.scaleLine(scale));
+//			scale = vLine.getS().getX() + vLine.getE().getY();
+//		}else if(line instanceof ValueLine64) {
+//			ValueLine64 vLine = (ValueLine64) line;
+//			addToScaledLines(vLine.scaleLine(scale));
+//			scale = Double.valueOf((vLine.getS().getX() + vLine.getE().getY())).intValue();
+//		}else if(line instanceof NonValueLine) {
+//			NonValueLine nvline = (NonValueLine) line;
+//			addToScaledLines(nvline.scaleLine(scale));
+//			scale = nvline.getS().getX() + nvline.getE().getY();
+//		}else if(line instanceof NonValueLine64) {
+//			NonValueLine64 nvline = (NonValueLine64) line;
+//			addToScaledLines(nvline.scaleLine(scale));
+//			scale = Double.valueOf((nvline.getS().getX() + nvline.getE().getY())).intValue();
+//		}else if(line instanceof ValueLineMeduim) {
+//			ValueLineMeduim vLine = (ValueLineMeduim) line;
+//			addToScaledLines(vLine.scaleLine(scale));
+//			scale = Double.valueOf((vLine.getS().getX() + vLine.getE().getY())).intValue();
+//		}else if(line instanceof ValueLine2x) {
+//			ValueLine2x vLine = (ValueLine2x) line;
+//			addToScaledLines(vLine.scaleLine(scale));
+//			scale = Double.valueOf((vLine.getS().getX() + vLine.getE().getY())).intValue();
+//		}else if(line instanceof ValueLine4x) {
+//			ValueLine4x vLine = (ValueLine4x) line;
+//			addToScaledLines(vLine.scaleLine(scale));
+//			scale = Double.valueOf((vLine.getS().getX() + vLine.getE().getY())).intValue();
+//		}else if(line instanceof ValueLine8x) {
+//			ValueLine8x vLine = (ValueLine8x) line;
+//			addToScaledLines(vLine.scaleLine(scale));
+//			scale = Double.valueOf((vLine.getS().getX() + vLine.getE().getY())).intValue();
+//		}else {
+//			System.out.println("Error: Invalid Type. No scaling done");
+//		}
 	}
 	
 //	public void runExpt64(boolean isVal) {

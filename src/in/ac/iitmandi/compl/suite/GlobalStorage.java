@@ -10,7 +10,7 @@ import in.ac.iitmandi.compl.ds.AbstractLine;
 import in.ac.iitmandi.compl.ds.NonValueLine;
 import in.ac.iitmandi.compl.ds.NonValueLine64;
 import in.ac.iitmandi.compl.ds.ValueLine;
-import in.ac.iitmandi.compl.ds.ValueLine64;
+import in.ac.iitmandi.compl.ds.ValueLine16x;
 
 /**
  * @author arjun
@@ -20,12 +20,12 @@ public class GlobalStorage {
 	
 	private List<ValueLine> valLineList;
 	private List<NonValueLine> nValLineList;
-	private List<ValueLine64> valLine64List;
+	private List<ValueLine16x> valLine64List;
 	private List<NonValueLine64> nValLine64List;
 	
 	private List<AbstractLine> lineList;
 	
-	public static int ITERSIZE = 32000000;
+	public static int ITERSIZE;
 	
 	static GlobalStorage instance;
 	
@@ -70,14 +70,14 @@ public class GlobalStorage {
 	/**
 	 * @return the valLine64List
 	 */
-	public List<ValueLine64> getValLine64List() {
+	public List<ValueLine16x> getValLine64List() {
 		return valLine64List;
 	}
 
 	/**
 	 * @param valLine64List the valLine64List to set
 	 */
-	public void setValLine64List(List<ValueLine64> valLine64List) {
+	public void setValLine64List(List<ValueLine16x> valLine64List) {
 		this.valLine64List = valLine64List;
 	}
 
@@ -129,8 +129,8 @@ public class GlobalStorage {
 		currentList.add(line);
 	}
 	
-	public static void addToValList(ValueLine64 line) {
-		List<ValueLine64> currentList = getInstance().getValLine64List();
+	public static void addToValList(ValueLine16x line) {
+		List<ValueLine16x> currentList = getInstance().getValLine64List();
 		if(currentList == null) {
 			currentList = new ArrayList<>();
 			getInstance().setValLine64List(currentList);

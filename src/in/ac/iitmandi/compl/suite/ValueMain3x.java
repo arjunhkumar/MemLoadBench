@@ -5,38 +5,38 @@ package in.ac.iitmandi.compl.suite;
 
 import java.util.Random;
 
-import in.ac.iitmandi.compl.ds.ValueLine64;
-import in.ac.iitmandi.compl.ds.ValuePoint64;
+import in.ac.iitmandi.compl.ds.ValueLine3x;
+import in.ac.iitmandi.compl.ds.ValuePoint3x;
 
 /**
  * @author arjun
  *
  */
-public class ValueMain64 extends SuperMainClass {
+public class ValueMain3x extends SuperMainClass {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		GlobalStorage.setIterVal(args);
-		ValueMain64 mainObj = new ValueMain64();
+		ValueMain3x mainObj = new ValueMain3x();
 		mainObj.intializeDataPoints();
 		mainObj.runExperiments();
 	}
 
-	public ValueLine64 createLine() {
+	public ValueLine3x createLine() {
 		Random randomGenerator = new Random();
-		return new ValueLine64(createVPoint64(randomGenerator),createVPoint64(randomGenerator));
+		return new ValueLine3x(createVPoint(randomGenerator),createVPoint(randomGenerator));
 	}
 
 	/**
 	 * @param randomGenerator
 	 * @return 
 	 */
-	private ValuePoint64 createVPoint64(Random randomGenerator) {
+	private ValuePoint3x createVPoint(Random randomGenerator) {
 		int x = randomGenerator.nextInt();
 		int y = randomGenerator.nextInt();
-		return new ValuePoint64(x, y);
+		return new ValuePoint3x(x, y);
 	}
 	
 

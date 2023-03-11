@@ -9,4 +9,6 @@ package in.ac.iitmandi.compl.ds;
  */
 public abstract class AbstractLine {
 
+	public abstract AbstractLine scaleLine(int scale);
+	
 }
