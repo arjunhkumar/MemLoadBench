@@ -25,7 +25,7 @@ public class GlobalStorage {
 	
 	private List<AbstractLine> lineList;
 	
-	public static int ITERSIZE;
+	public static int ITERSIZE = 32000000;
 	
 	static GlobalStorage instance;
 	
