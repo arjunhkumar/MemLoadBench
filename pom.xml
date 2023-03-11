@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <name>Memory-Load-Benchmark</name>
   <packaging>jar</packaging>
-  <version>1.1</version>
+  <version>2.0-SNAPSHOT</version>
   <properties>
     <maven.compiler.target>20</maven.compiler.target>
     <maven.compiler.source>20</maven.compiler.source>
@@ -20,10 +20,9 @@
                     <configuration>
                     <verbose>true</verbose>
                     <fork>true</fork>
-                    <executable>/home/arjun/Workspaces/openj9_valuetypes_dev/build/linux-x86_64-server-release/images/jdk/bin/javac</executable>
+                    <executable>/home/arjun/WD/J9/Containers/openj9_valuetypes_sanity_v2/build/linux-x86_64-server-release/images/jdk/bin/javac</executable>
+<!--                     <executable>/home/arjun/Workspaces/openj9_valuetypes_dev/build/linux-x86_64-server-release/images/jdk/bin/javac</executable> -->
 <!--                     <executable>/home/arjun/Working_Directory/Softwares/Utilities/OpenJDK/openjdk-14/jdk-14/bin/javac</executable> -->
-                    <maven.compiler.source>20</maven.compiler.source>
-                    <maven.compiler.target>20</maven.compiler.target>
                     <compilerArgs>
                         <arg>-XDenablePrimitiveClasses</arg>
                     </compilerArgs>

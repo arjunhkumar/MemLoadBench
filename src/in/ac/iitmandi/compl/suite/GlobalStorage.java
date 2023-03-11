@@ -6,8 +6,11 @@ package in.ac.iitmandi.compl.suite;
 import java.util.ArrayList;
 import java.util.List;
 
+import in.ac.iitmandi.compl.ds.AbstractLine;
 import in.ac.iitmandi.compl.ds.NonValueLine;
+import in.ac.iitmandi.compl.ds.NonValueLine64;
 import in.ac.iitmandi.compl.ds.ValueLine;
+import in.ac.iitmandi.compl.ds.ValueLine64;
 
 /**
  * @author arjun
@@ -17,6 +20,13 @@ public class GlobalStorage {
 	
 	private List<ValueLine> valLineList;
 	private List<NonValueLine> nValLineList;
+	private List<ValueLine64> valLine64List;
+	private List<NonValueLine64> nValLine64List;
+	
+	private List<AbstractLine> lineList;
+	
+	public static int ITERSIZE;
+	
 	static GlobalStorage instance;
 	
 	private GlobalStorage() {
@@ -57,11 +67,73 @@ public class GlobalStorage {
 		this.nValLineList = nValLineList;
 	}
 
+	/**
+	 * @return the valLine64List
+	 */
+	public List<ValueLine64> getValLine64List() {
+		return valLine64List;
+	}
+
+	/**
+	 * @param valLine64List the valLine64List to set
+	 */
+	public void setValLine64List(List<ValueLine64> valLine64List) {
+		this.valLine64List = valLine64List;
+	}
+
+	/**
+	 * @return the nValLine64List
+	 */
+	public List<NonValueLine64> getnValLine64List() {
+		return nValLine64List;
+	}
+
+	/**
+	 * @param nValLine64List the nValLine64List to set
+	 */
+	public void setnValLine64List(List<NonValueLine64> nValLine64List) {
+		this.nValLine64List = nValLine64List;
+	}
+
+	/**
+	 * @param args
+	 */
+	static void setIterVal(String[] args) {
+		if(args.length > 0) {
+			String iterSize = args[0];
+			int iterVal = Integer.parseInt(iterSize);
+			ITERSIZE = iterVal;
+		}
+	}
+
+	/**
+	 * @return the lineList
+	 */
+	public List<AbstractLine> getLineList() {
+		return lineList;
+	}
+
+	/**
+	 * @param lineList the lineList to set
+	 */
+	public void setLineList(List<AbstractLine> lineList) {
+		this.lineList = lineList;
+	}
+
 	public static void addToValList(ValueLine line) {
 		List<ValueLine> currentList = getInstance().getValLineList();
 		if(currentList == null) {
 			currentList = new ArrayList<>();
 			getInstance().setValLineList(currentList);
+		}
+		currentList.add(line);
+	}
+	
+	public static void addToValList(ValueLine64 line) {
+		List<ValueLine64> currentList = getInstance().getValLine64List();
+		if(currentList == null) {
+			currentList = new ArrayList<>();
+			getInstance().setValLine64List(currentList);
 		}
 		currentList.add(line);
 	}
@@ -74,4 +146,30 @@ public class GlobalStorage {
 		}
 		currentList.add(line);
 	}
+	
+	public static void addToValList(NonValueLine64 line) {
+		List<NonValueLine64> currentList = getInstance().getnValLine64List();
+		if(currentList == null) {
+			currentList = new ArrayList<>();
+			getInstance().setnValLine64List(currentList);
+		}
+		currentList.add(line);
+	}
+	
+	public static void createNewLineList() {
+		if(getInstance().lineList == null) {
+			getInstance().lineList = new ArrayList<>();
+		}else {
+			getInstance().lineList.clear();
+			getInstance().lineList = new ArrayList<>();
+		}
+	}
+	
+	public static void addToLineList(AbstractLine line) {
+		if(getInstance().lineList == null) {
+			getInstance().lineList = new ArrayList<>();
+		}
+		getInstance().lineList.add(line);
+	}
+	
 }

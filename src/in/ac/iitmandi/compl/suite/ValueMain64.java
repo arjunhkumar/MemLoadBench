@@ -5,38 +5,39 @@ package in.ac.iitmandi.compl.suite;
 
 import java.util.Random;
 
-import in.ac.iitmandi.compl.ds.NonValueLine;
-import in.ac.iitmandi.compl.ds.NonValuePoint;
+import in.ac.iitmandi.compl.ds.ValueLine64;
+import in.ac.iitmandi.compl.ds.ValuePoint64;
 
 /**
  * @author arjun
  *
  */
-public class NonValueMain extends SuperMainClass{
+public class ValueMain64 extends SuperMainClass {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		GlobalStorage.setIterVal(args);
-		NonValueMain mainObj = new NonValueMain();
+		ValueMain64 mainObj = new ValueMain64();
 		mainObj.intializeDataPoints();
 		mainObj.runExperiments();
 	}
 
-	public NonValueLine createLine() {
+	public ValueLine64 createLine() {
 		Random randomGenerator = new Random();
-		return new NonValueLine(createNVPoint(randomGenerator),createNVPoint(randomGenerator));
+		return new ValueLine64(createVPoint64(randomGenerator),createVPoint64(randomGenerator));
 	}
 
 	/**
 	 * @param randomGenerator
 	 * @return 
 	 */
-	private NonValuePoint createNVPoint(Random randomGenerator) {
+	private ValuePoint64 createVPoint64(Random randomGenerator) {
 		int x = randomGenerator.nextInt();
 		int y = randomGenerator.nextInt();
-		return new NonValuePoint(x, y);
+		return new ValuePoint64(x, y);
 	}
+	
 
 }
